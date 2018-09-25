@@ -5,7 +5,7 @@ var topics = ["dog", "cat", "bird", "hamster", "goldfsh", "turtle", "salamander"
 
 function generateGifs() {
   let topic = $(this).attr("data-animal");
-  let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=6rFo1gdMKiLJWl6ZNmlMZGIjOIkbgsmj"
+  let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=6rFo1gdMKiLJWl6ZNmlMZGIjOIkbgsmj"
 
   $.ajax({
     url: queryURL,
